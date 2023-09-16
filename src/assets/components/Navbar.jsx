@@ -1,5 +1,11 @@
+import { Link } from 'react-router-dom';
 import { FaAngleUp, FaBars } from 'react-icons/fa';
 import { useState } from 'react';
+// .....pages
+import Pages from '../components/Routers'
+
+
+
 const Navbar  = () => {
   const [electrons, setElectrons] = useState(false)
   const [clothes, setCLothes] = useState(false)
@@ -27,21 +33,23 @@ const Navbar  = () => {
   return (
 
     <>
-       <div className="main bg-white  fixed shadow-lg w-full h-20 py-6 flex justify-between px-10
+       <div className="main bg-white   shadow-lg w-full h-20 py-6 flex justify-between px-10
         xl:justify-evenly lg:justify-evenly md:justify-evenly sm:justify-evenly">
            
-              <span className='block xl:hidden lg:hidden md:hidden sm:hidden text-[25px]' onClick={toggle}>
+              <span className='block xl:hidden lg:hidden md:hidden sm:hidden text-[25px] cursor-pointer'  onClick={toggle}>
                   <FaBars />
                 </span>
              
             <nav className='hidden xl:block  lg:block md:block sm:block'>
                 <ul className='flex'>
+                <Link to="/">Home</Link>
                     <li className='px-2 xl:px-6 lg:px-4 md:px-4 sm:px-4 flex flex-col' onClick={Electrons}>
                             <span className='flex font-semibold cursor-pointer'>
                             Electrons
                           <span className='pt-[4px]'><FaAngleUp /></span>
+                        
                             </span>
-                                  <div className='  absolute  top-16'>
+                                  <div className='  absolute  top-64'>
                               {electrons && (
                                 <div className="py-4 pl-2 bg-red-400 w-[120px] ">
                                   <li>electrons 1</li>
@@ -56,7 +64,7 @@ const Navbar  = () => {
                         CLothers
                         <span className='pt-[4px]'><FaAngleUp /></span>
                         </span>
-                        <div className='absolute  top-16'>
+                        <div className='absolute  top-64'>
                   {clothes && (
                     <div className="bg-green-400 py-4 pl-2 w-[120px]">
                       <li>cloth 1</li>
@@ -72,7 +80,7 @@ const Navbar  = () => {
                         <span className='pt-[4px]'><FaAngleUp /></span>
                          </span>
 
-                         <div className='absolute top-16'>
+                         <div className='absolute top-64'>
                           {book && (
                             <div className="bg-yellow-400 py-4 pl-2 w-[120px]">
                               <li>Book 1</li>
@@ -87,7 +95,7 @@ const Navbar  = () => {
                          Shop deals
                         <span className='pt-[4px]'><FaAngleUp /></span>
                          </span>
-                        <div className='absolute top-16'>
+                        <div className='absolute top-64'>
                           {shop && (
                             <div className="bg-purple-400 ml-4 py-4 pl-2 w-[120px]">
                               <li>Phone 1</li>
@@ -104,8 +112,9 @@ const Navbar  = () => {
 
             <div className="login">
               <ul className='flex'>
-                <li className='px-2'>Login</li>
-                <li className='px-2'>sing up</li>
+                <Link to="/sign-in" className='px-2 cursor-pointer'>Login</Link>
+                <Link className='px-2 cursor-pointer' to= "/sing-up">sing-up</Link>
+                
               </ul>
               <div className="toggle">
                
@@ -113,14 +122,16 @@ const Navbar  = () => {
             </div>
 
             {/* ......... d */}
+        
            
        </div>
+ 
 
        {/* ............ navabar toggle */}
      
         {isopen && (
          
-             <nav className='block   pl-8 pb-4 relative top-20 bg-white shadow-lg w-full h-full'>
+             <nav className='block   pl-8 pb-4 relative top-10 bg-white shadow-lg w-full h-full'>
                 <ul className='flex flex-col'>
                     <li className='px-2  xl:px-4 lg:px-4 md:px-4 sm:px-4 flex flex-col' onClick={Electrons}>
                             <span className='flex font-semibold cursor-pointer' >
@@ -186,9 +197,17 @@ const Navbar  = () => {
                     </li>
                 </ul>
             </nav>
+                
           
         
         )}
+
+        {/* .............all pages appear here */}
+
+
+  
+        <Pages />
+     
        
     </>
   )
