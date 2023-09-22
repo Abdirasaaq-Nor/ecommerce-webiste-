@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaFacebook, FaTwitter, FaInstagram , FaTiktok, FaCartArrowDown} from 'react-icons/fa';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import  logo from '../images/mail.png'
+import  logo_com from '../images/comp_logo.png'
 
 
 
@@ -16,7 +17,7 @@ const Header = () => {
     // JSX code
     <>
     <header className=''>
-        <div className=' h-full] pb-10 bg-green-500 text-white'>
+        <div className=' h-full] pb-10 bg-green-500 text-white w-full'>
             {/* ....top section */}
 
     <div className="open_hors flex justify-between lg:mx-20 pt-4">
@@ -41,7 +42,7 @@ const Header = () => {
      <div className="search   lg:flex  md:flex sm:flex xl:flex xl:justify-between lg:justify-between md:justify-between sm:justify-between  lg:mx-20 mx-10 mt-8">
         <div className="search_ flex justify-between">
 
-            <img className='w-[70px]' src={logo} alt="logo" />
+            <img className='w-[70px]' src={logo_com} alt="logo" />
             <div className=" block flex xl:hidden lg:hidden md:hidden sm:hidden  ">
             <span className='mt-4 mr-2'><FontAwesomeIcon className=' h-[50px]' icon={faCartShopping} /></span>
             <span className='bg-red-400 w-[40px] h-[40px] rounded-full flex justify-center items-center text-white '>1</span>

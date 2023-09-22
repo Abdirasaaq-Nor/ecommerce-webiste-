@@ -33,16 +33,19 @@ const Navbar  = () => {
   return (
 
     <>
-       <div className="main bg-white   shadow-lg w-full h-20 py-6 flex justify-between px-10
+       <div className="main bg-white  shadow-lg w-full h-20 py-6 flex justify-between px-10
         xl:justify-evenly lg:justify-evenly md:justify-evenly sm:justify-evenly">
            
               <span className='block xl:hidden lg:hidden md:hidden sm:hidden text-[25px] cursor-pointer'  onClick={toggle}>
                   <FaBars />
                 </span>
+                {/* ...................desktop navabr */}
              
             <nav className='hidden xl:block  lg:block md:block sm:block'>
                 <ul className='flex'>
-                <Link to="/">Home</Link>
+                   <li className=''>
+                   <Link className='' to="/">Home</Link>
+                   </li>
                     <li className='px-2 xl:px-6 lg:px-4 md:px-4 sm:px-4 flex flex-col' onClick={Electrons}>
                             <span className='flex font-semibold cursor-pointer'>
                             Electrons
@@ -133,6 +136,9 @@ const Navbar  = () => {
          
              <nav className='block   pl-8 pb-4 relative top-10 bg-white shadow-lg w-full h-full'>
                 <ul className='flex flex-col'>
+                <li className=' pl-2 pb-2'>
+                   <Link className='' to="/">Home</Link>
+                   </li>
                     <li className='px-2  xl:px-4 lg:px-4 md:px-4 sm:px-4 flex flex-col' onClick={Electrons}>
                             <span className='flex font-semibold cursor-pointer' >
                             Electrons

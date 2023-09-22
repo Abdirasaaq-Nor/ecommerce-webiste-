@@ -2,7 +2,9 @@ import { useState } from "react"
 import mac from '../images/mac.png'
 import t_shirt from '../images/shirt.png'
 import watch from '../images/wat.png'
+
 import { FaAngleLeft, FaAngleRight} from 'react-icons/fa';
+import Trasted_companies from "./Trasted_companies";
 
 const Hero_sec = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -38,42 +40,45 @@ const Hero_sec = () => {
     ]
     return (
         <>
-        <div className="flex  xl:justify-center mt-4">
+                <div className="main">
+                    <div className="second_main flex justify-between  bg-green-50 w-full h-full px-2 pb-10 mb-10 ">
+                        {/* ...icon left */}
+                        <div className="icon_left px-4 flex justify-center self-center items-center
+                         text-gray-500 text-[30px] cursor-pointer" onClick={handlePrevious}>
+                            <FaAngleLeft />
+                        </div>
+                        {/* ...contents */}
 
-        <div className="bg-green-50 w-10/12  h-[500px]">
-            {/* content here */}
-                           
-               <div className="flex pt-10 flex-col a xl:flex-row lg:flex-col  md:flex-row md:justify-start xl:justify-around" >
-                        <div className="flex justify-start mr-20">
-                                <div className="mt-32 xl:mt-44 lg:mt-40 md:mt-40 xl:mr-20 lg:mr-20 md:mr-20 text-[30px] cursor-pointer" onClick={handlePrevious}>
-                                <FaAngleLeft />
-                               </div>
-                               <div className="xl:hidden md:hidden  lg:hidden  relative  top-32 left-[130%]  xl:left-[100%] lg:bg-yellow-400 text-[30px]">
-                                 <FaAngleRight />
-                                 </div>
-                                 <div className="flex flex-col mr-56 ">
-                                 <img className="bg-transparent block xl:hidden lg:hidden md:hidden" src={carouselData[activeIndex].image}alt="" />
-                                 <h1 className="font-bold text-[30px] pt-10 pb-0">{carouselData[activeIndex].name}</h1>
-                                    <h4 className="font-medium">{carouselData[activeIndex].sub_info}</h4>
-                                    <p className=" w-[280px] sm:w-[360px]  xl:w-[400px] lg:w-[400px] md:w-[400px] pt-10">{carouselData[activeIndex].description}</p>
-                                    <button className="bg-green-600 text-white w-[200px] h-[50px] rounded-md mt-10">Buy now</button>
-                                 </div>
-                                
+                        <div className="content px-4 flex ">
+                                <div className="content_1 ">
+                                <img className="bg-transparent xl:hidden lg:hidden md:hidden sm:hidden" src={carouselData[activeIndex].image}alt="" />
+                                <h1 className="font-bold text-[26px] pt-4">{carouselData[activeIndex].name}</h1>
+                                <h4 className="font-medium">{carouselData[activeIndex].sub_info}</h4>
+                                <p className="pt-6 xl:w-[400px] lg:w-[300px]">{carouselData[activeIndex].description}</p>
+                                <button className="bg-green-600 text-white w-[200px] h-[50px] rounded-md mt-10">Buy now</button>
+                          
+                                </div>
+                                <div className="mg">
+                                <img className="bg-transparent hidden xl:block lg:block md:block sm:block" src={carouselData[activeIndex].image}alt="" />
+                                </div>
                         </div>
 
-                        {/* .img */}
-                        <div className="flex mt-10">
-                            <img className="bg-transparent hidden xl:block lg:block md:block md:w-[500px]" src={carouselData[activeIndex].image}alt="" />
-                           <div className="mt-44 ml-20 md:ml-16 text-[30px] cursor-pointer hidden xl:block lg:block 
-                           md:block  lg:absolute lg:top-[30%] lg:left-[86%]"  onClick={handleNext}>
+                        {/* .....icon rght */}
+                        <div className="icon_right px-4  flex justify-center 
+                        self-center items-center text-gray-500 text-[30px] cursor-pointer" onClick={handleNext}>
                             <FaAngleRight />
-                           </div>
                         </div>
+                    </div>
+                </div>
+
+                {/* ..........trasted compnaies here */}
+
+               <div>
+               <Trasted_companies />
                </div>
 
-        </div>
-        </div>
-    
+
+                 
         </>
     )
 }
