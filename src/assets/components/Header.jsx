@@ -17,6 +17,7 @@ const Header = () => {
     // JSX code
     <>
     <header className=''>
+        <h2>sss</h2>
         <div className=' h-full] pb-10 bg-green-500 text-white w-full'>
             {/* ....top section */}
 
