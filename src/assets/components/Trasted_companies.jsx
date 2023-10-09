@@ -7,8 +7,8 @@ const Trasted_companies = () => {
 
 return (
     <>
-<div className="main_div">
-                    <h2 className="flex justify-center items-center py-10">Trasted Companies</h2>
+<div className="main_div mt-20">
+                    <h2 className="flex justify-center items-center py-10 text-[40px]">Trasted Companies</h2>
 
                <div className="trasted_compnies grid grid-cols-3 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-5">
            

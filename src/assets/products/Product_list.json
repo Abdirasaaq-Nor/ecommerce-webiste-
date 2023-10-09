@@ -1,25 +1,70 @@
+
 {
     "products": [
       {
         "id": 1,
         "name": "Product 1",
+        "type": "new",
         "price": 19.99,
         "description": "This is the description of Product 1.",
-        "image": "product1.jpg"
+        "discount": "Qiima dhimis 10%, isniin iyo talaado",
+        "image": "product_img/mac.png"
+
       },
       {
         "id": 2,
         "name": "Product 2",
+        "type": "old",
         "price": 29.99,
         "description": "This is the description of Product 2.",
-        "image": "product2.jpg"
+        "discount": "Qiima dhimis 16%, Jumco iyo talaado",
+        "image": "product_img/wat.png"
       },
       {
         "id": 3,
         "name": "Product 3",
+        "type": "1 Month",
         "price": 39.99,
         "description": "This is the description of Product 3.",
-        "image": "product3.jpg"
+        "discount": "Qiima dhimis 20%, Sabti ..",
+        "image": "product_img/shirt.png"
+
+      },
+      {
+        "id": 2,
+        "name": "Product 2",
+        "type": "old",
+        "price": 29.99,
+        "description": "This is the description of Product 2.",
+        "discount": "Qiima dhimis 10%, isniin iyo talaado",
+        "image": "product_img/wat.png"
+      },
+      {
+        "id": 3,
+        "name": "Product 3",
+        "type": "1 Month",
+        "price": 39.99,
+        "description": "This is the description of Product 3.",
+        "discount": "Qiima dhimis 30%, Qamiis iyo jumco",
+        "image": "product_img/shirt.png"
+      },
+      {
+        "id": 1,
+        "name": "Product 1",
+        "type": "new",
+        "price": 19.99,
+        "description": "This is the description of Product 1.",
+        "discount": "Qiima dhimis 25%, isniin iyo arbco",
+        "image": "product_img/mac.png"
+      },
+      {
+        "id": 2,
+        "name": "Product 2",
+        "type": "old",
+        "price": 29.99,
+        "description": "This is the description of Product 2.",
+        "discount": "Qiima dhimis 8%, isniin iyo talaado",
+        "image": "product_img/wat.png"
       }
     ]
   }
