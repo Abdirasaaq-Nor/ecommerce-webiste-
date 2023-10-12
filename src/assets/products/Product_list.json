@@ -8,7 +8,9 @@
         "price": 19.99,
         "description": "This is the description of Product 1.",
         "discount": "Qiima dhimis 10%, isniin iyo talaado",
-        "image": "product_img/mac.png"
+        "image": "../product_img/mac.png",
+        "category":"Electronics",
+        "Long_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla molestias nam architecto fugit deleniti ullam, facere nihil animi illum, dolore veritatis assumenda illo. Maxime vero magni est mollitia accusantium ipsum praesentium illum suscipit qui, rem odit tempore modi nobis quis illo omnis dolorem amet iste debitis. Eveniet numquam laudantium sequi!"
 
       },
       {
@@ -18,7 +20,7 @@
         "price": 29.99,
         "description": "This is the description of Product 2.",
         "discount": "Qiima dhimis 16%, Jumco iyo talaado",
-        "image": "product_img/wat.png"
+        "image": "../product_img/wat.png"
       },
       {
         "id": 3,
@@ -27,7 +29,7 @@
         "price": 39.99,
         "description": "This is the description of Product 3.",
         "discount": "Qiima dhimis 20%, Sabti ..",
-        "image": "product_img/shirt.png"
+        "image": "../product_img/shirt.png"
 
       },
       {
@@ -37,7 +39,7 @@
         "price": 29.99,
         "description": "This is the description of Product 2.",
         "discount": "Qiima dhimis 10%, isniin iyo talaado",
-        "image": "product_img/wat.png"
+        "image": "../product_img/wat.png"
       },
       {
         "id": 3,
@@ -46,7 +48,7 @@
         "price": 39.99,
         "description": "This is the description of Product 3.",
         "discount": "Qiima dhimis 30%, Qamiis iyo jumco",
-        "image": "product_img/shirt.png"
+        "image": "../product_img/shirt.png"
       },
       {
         "id": 1,
@@ -55,7 +57,7 @@
         "price": 19.99,
         "description": "This is the description of Product 1.",
         "discount": "Qiima dhimis 25%, isniin iyo arbco",
-        "image": "product_img/mac.png"
+        "image": "../product_img/mac.png"
       },
       {
         "id": 2,
@@ -64,7 +66,7 @@
         "price": 29.99,
         "description": "This is the description of Product 2.",
         "discount": "Qiima dhimis 8%, isniin iyo talaado",
-        "image": "product_img/wat.png"
+        "image": "../product_img/wat.png"
       }
     ]
   }

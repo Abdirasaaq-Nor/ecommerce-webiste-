@@ -48,6 +48,7 @@ const Hero_sec = () => {
                             <FaAngleLeft />
                         </div>
                         {/* ...contents */}
+                      
 
                         <div className="content px-4 flex ">
                                 <div className="content_1 ">
